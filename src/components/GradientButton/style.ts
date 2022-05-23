@@ -1,0 +1,30 @@
+import styled from "styled-components";
+
+const Container = styled.a`
+  text-decoration: none;
+  color: ${(props) => props.theme.neutralColors.light};
+  display: flex;
+  position: relative;
+  border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  min-width: 8rem;
+  padding: 0.5rem;
+  background-color: ${(props) => props.theme.neutralColors.dark};
+  &:before {
+    content: "";
+    position: absolute;
+    border-radius: 0.5rem;
+    z-index: -1;
+    padding: 0.2rem;
+    height: 100%;
+    width: 100%;
+    background: ${(props) =>
+      props.color == "pink"
+        ? props.theme.colors.gradientPink
+        : props.theme.colors.gradientPurple};
+    z-index: -1;
+  }
+`;
+
+export { Container };
