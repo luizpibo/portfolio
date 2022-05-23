@@ -16,7 +16,7 @@ const Container = styled.a`
     position: absolute;
     border-radius: 0.5rem;
     z-index: -1;
-    padding: 0.2rem;
+    padding: 0.15rem;
     height: 100%;
     width: 100%;
     background: ${(props) =>

@@ -12,8 +12,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     },
     neutralColors: {
       dark: "#121212",
-      "dark-200": "#151515",
-      "gray-light": "#C4C4C4",
+      dark200: "#151515",
+      grayLight: "#C4C4C4",
       light: "#FFFFFF",
     },
   };
