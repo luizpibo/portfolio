@@ -1,5 +1,10 @@
 import GradiendButton from "../../../components/GradientButton";
-import { Container, Buttons, ImageContainer, TextContainer } from "./styles";
+import {
+  ContainerAbout,
+  Buttons,
+  ImageContainer,
+  TextContainer,
+} from "./styles";
 const infos = {
   localization: "Brasília-DF",
   texto:
@@ -7,7 +12,7 @@ const infos = {
 };
 const About = () => {
   return (
-    <Container>
+    <ContainerAbout>
       <ImageContainer>
         <img src="https://www.github.com/luizpibo.png" />
       </ImageContainer>
@@ -25,7 +30,7 @@ const About = () => {
           <GradiendButton color="blue" icon="email" text="E-mail" url="#" />
         </Buttons>
       </TextContainer>
-    </Container>
+    </ContainerAbout>
   );
 };
 

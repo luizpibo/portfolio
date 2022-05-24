@@ -11,6 +11,7 @@ const Container = styled.a`
   min-width: 8rem;
   padding: 0.5rem;
   background-color: ${(props) => props.theme.neutralColors.dark};
+  
   &:before {
     content: "";
     position: absolute;
@@ -23,7 +24,6 @@ const Container = styled.a`
       props.color == "pink"
         ? props.theme.colors.gradientPink
         : props.theme.colors.gradientPurple};
-    z-index: -1;
   }
 `;
 

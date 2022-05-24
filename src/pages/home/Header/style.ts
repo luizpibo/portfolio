@@ -95,7 +95,7 @@ const Wrapper = Styled.div`
     }
 
     @media (max-width: 1024px) {
-        min-height: 50vh;
+        min-height: 70vh;
         padding-bottom: 3rem;
     }
 

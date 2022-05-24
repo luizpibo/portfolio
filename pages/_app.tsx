@@ -3,7 +3,7 @@ import GlobalStyle from "../src/theme/global";
 
 import { ThemeProvider } from "styled-components";
 
-const MyApp = ({ Component, pageProps }: AppProps) => {
+function MyApp({ Component, pageProps }: AppProps) {
   const theme = {
     colors: {
       blue: "#00D2DF",
@@ -26,6 +26,6 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
       </ThemeProvider>
     </>
   );
-};
+}
 
 export default MyApp;
