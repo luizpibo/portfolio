@@ -34,9 +34,9 @@ const Experiences = () => {
   const [experience, setExperience] = useState(dados[0]);
 
   return (
-    <ContainerExperience>
-      <div>
-        <h2 style={{padding: "1rem 0"}}>EXPERIÊNCIAS</h2>
+    <div id="experiencias">
+      <ContainerExperience>
+        <h2 style={{ padding: "1rem 0" }}>EXPERIÊNCIAS</h2>
         <ButtonsNav>
           <ul>
             {dados.map((dado, index) => (
@@ -53,15 +53,16 @@ const Experiences = () => {
             ))}
           </ul>
         </ButtonsNav>
-      </div>
-      <Experience>
-        <div>
-          <h3>{experience.title}</h3> <span>{experience.date}</span>
-        </div>
-        <p>{experience.company}</p>
-        <p>{experience.description}</p>
-      </Experience>
-    </ContainerExperience>
+
+        <Experience>
+          <div>
+            <h3>{experience.title}</h3> <span>{experience.date}</span>
+          </div>
+          <p>{experience.company}</p>
+          <p>{experience.description}</p>
+        </Experience>
+      </ContainerExperience>
+    </div>
   );
 };
 

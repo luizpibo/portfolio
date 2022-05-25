@@ -1,38 +1,13 @@
 import Styled from "styled-components";
 
 const Container = Styled.header`
-    width: 100%;
-    position: relative;
-
     background: ${(props) => props.theme.neutralColors.dark};
-    
+    width: 100%;
     h1 {
         color: ${(props) => props.theme.colors.blue};
     }
     h2, h3 {
         color: ${(props) => props.theme.neutralColors.light};
-    }
-
-    nav{
-        color: ${(props) => props.theme.neutralColors.light};
-        padding: 2rem 5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        ul{
-            display: flex;
-            align-items: center;
-            list-style: none;
-            gap: 3rem;
-        }
-        a{
-            color: ${(props) => props.theme.colors.light};
-            text-decoration: none;
-            font-size: 2rem;
-            font-weight: bold;
-            padding: 0 2rem;
-
-        }
     }
 
     @media (min-width: 1079px) {
@@ -69,12 +44,6 @@ const Container = Styled.header`
     }
 
     @media (max-width: 768px) {
-        nav {
-            flex-direction: column;
-            ul {
-                flex-direction: column;
-            }
-        }
         h1 {
             font-size: 2.2rem;
         }
@@ -90,17 +59,10 @@ const Wrapper = Styled.div`
     display: flex;
     width: 100%;
     position: relative;
-    @media (max-width: 1079px) {
-        
-    }
+    padding: 5rem 0;
 
     @media (max-width: 1024px) {
-        min-height: 70vh;
-        padding-bottom: 3rem;
-    }
-
-    @media (max-width: 768px) {
-        
+        min-height: 50vh;
     }
 `;
 

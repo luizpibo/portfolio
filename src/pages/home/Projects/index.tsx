@@ -47,19 +47,27 @@ const ProjectsComponent = () => {
   ];
 
   return (
-    <ContainerProjects>
-      <h2>Projects</h2>
-      <Projects>
-        {projects.map((project, index) => (
-          <Project>
-            <img src={project.image} />
-            <h3>{project.name}</h3>
-            <p>{project.description}</p>
-            <GradiendButton color="red" icon="link" text="Visualizar" url={project.link} key={project.name+index}/>
-          </Project>
-        ))}
-      </Projects>
-    </ContainerProjects>
+    <div id="projetos">
+      <ContainerProjects>
+        <h2>Projects</h2>
+        <Projects>
+          {projects.map((project, index) => (
+            <Project>
+              <img src={project.image} />
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <GradiendButton
+                color="red"
+                icon="link"
+                text="Visualizar"
+                url={project.link}
+                key={project.name + index}
+              />
+            </Project>
+          ))}
+        </Projects>
+      </ContainerProjects>
+    </div>
   );
 };
 

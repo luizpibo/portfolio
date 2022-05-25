@@ -10,6 +10,7 @@ const Container = styled.a`
   align-items: center;
   min-width: 8rem;
   padding: 0.5rem;
+  gap: 0.5rem;
   background-color: ${(props) => props.theme.neutralColors.dark};
   
   &:before {

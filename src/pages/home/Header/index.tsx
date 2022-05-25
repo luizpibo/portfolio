@@ -1,19 +1,11 @@
 import { Container, Wrapper, Presentetion, Buttons } from "./style";
 import Elipse from "../../../components/elipse_home";
 import GradientButton from "../../../components/GradientButton";
-
+import NavBar from "../../../components/NavBar";
 const HeaderComponent = () => {
   return (
     <Container>
-      <nav>
-        Luiz Fernando
-        <ul>
-          <li>Home</li>
-          <li>Sobre mim</li>
-          <li>Experiência</li>
-          <li>Projetos</li>
-        </ul>
-      </nav>
+      <NavBar />
       <Wrapper>
         <Presentetion>
           <h2>OLÁ, EU SOU</h2>
