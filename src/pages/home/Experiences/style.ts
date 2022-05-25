@@ -7,12 +7,18 @@ const ContainerExperience = styled.section`
   gap: 3rem;
   background-color: ${(props) => props.theme.neutralColors.dark};
   color: ${(props) => props.theme.neutralColors.light};
+
+  @media (max-width: 730px) {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
 `;
 
 const ButtonsNav = styled.nav`
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
   ul {
     display: flex;
     flex-direction: column;
@@ -23,6 +29,11 @@ const ButtonsNav = styled.nav`
       padding: 1rem 2.25rem;
       border-left: 0.2rem solid ${(props) => props.theme.neutralColors.dark200};
       transition: 1s;
+      background: linear-gradient(
+        45deg,
+        ${(props) => props.theme.neutralColors.dark200},
+        ${(props) => props.theme.neutralColors.dark}
+      );
       &:hover {
         cursor: pointer;
         background-color: ${(props) => props.theme.neutralColors.dark200};
@@ -36,6 +47,14 @@ const ButtonsNav = styled.nav`
       }
     }
   }
+
+  @media (max-width: 730px) {
+    padding: 1rem;
+    ul {
+      flex-direction: row;
+    }
+    overflow-x: scroll;
+  }
 `;
 
 const Experience = styled.div`
@@ -47,6 +66,10 @@ const Experience = styled.div`
   div {
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (max-width: 730px) {
+    width: 100%;
   }
 `;
 

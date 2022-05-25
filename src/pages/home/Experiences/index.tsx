@@ -35,23 +35,25 @@ const Experiences = () => {
 
   return (
     <ContainerExperience>
-      <ButtonsNav>
-        <h2>EXPERIÊNCIAS</h2>
-        <ul>
-          {dados.map((dado, index) => (
-            <li
-              key={index + dado.title + " nav"}
-              onClick={(e) => {
-                setExperience(dado);
-              }}
-            >
-              <div>
-                <span>{dado.company}</span>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </ButtonsNav>
+      <div>
+        <h2 style={{padding: "1rem 0"}}>EXPERIÊNCIAS</h2>
+        <ButtonsNav>
+          <ul>
+            {dados.map((dado, index) => (
+              <li
+                key={index + dado.title + " nav"}
+                onClick={(e) => {
+                  setExperience(dado);
+                }}
+              >
+                <div>
+                  <span>{dado.company}</span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </ButtonsNav>
+      </div>
       <Experience>
         <div>
           <h3>{experience.title}</h3> <span>{experience.date}</span>
