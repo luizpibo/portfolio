@@ -38,7 +38,7 @@ const Experiences = () => {
             {dados.map((dado, index) => (
               <li
                 key={index + dado.title + " nav"}
-                onMouseUp={(e) => {
+                onMouseUp={() => {
                   setExperience(dado);
                 }}
               >

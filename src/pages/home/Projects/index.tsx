@@ -6,25 +6,26 @@ const ProjectsComponent = () => {
       name: "GoChamp",
       description:
         "Trabalho da matéria de desenvolvimento web usando express, node, sequelize e handlebars.",
-      image: "https://via.placeholder.com/300x200",
-      link: "#",
+      image: "/GoChamp.png",
+      link: "https://github.com/luizpibo/GoChamp",
     },
     {
       name: "Busca clima",
       description:
         "SPA feita em react que usa a api do clima para buscar o clima de uma cidade.",
-      image: "https://via.placeholder.com/300x200",
-      link: "#",
+      image: "/busca_clima.png",
+      link: "https://github.com/luizpibo/busca_clima/",
     },
     {
       name: "Grid teamplate",
       description: "site de noticias sobre jogos feita usando display grid.",
-      image: "https://via.placeholder.com/300x200",
-      link: "#",
+      image: "/grid.png",
+      link: "https://github.com/luizpibo/display_grid",
     },
     {
       name: "UNIT UPIXELS",
-      description: "Estou trabalhando na migraçao da PWA para o novo layout. A plataforma usa postgresql, next.js, styled-components e tailwind.",
+      description:
+        "Estou trabalhando na migraçao da PWA para o novo layout. A plataforma usa postgresql, next.js, styled-components e tailwind.",
       image: "/upixels.png",
       link: "https://upixels.com.br/",
     },
@@ -42,7 +43,7 @@ const ProjectsComponent = () => {
       {/* <h2>Projects</h2> */}
       <Projects>
         {projects.map((project, index) => (
-          <Project data-aos="zoom-in">
+          <Project data-aos="zoom-in" key={"Projeto-"+project.name + index}>
             <img src={project.image} />
             <h3>{project.name}</h3>
             <p>{project.description}</p>

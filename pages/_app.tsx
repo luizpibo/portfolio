@@ -18,12 +18,12 @@ function MyApp({ Component, pageProps }: AppProps) {
       light: "#FFFFFF",
     },
   };
-
+  const AnyComponent = Component as any;
   return (
     <>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+        <AnyComponent {...pageProps} />
       </ThemeProvider>
     </>
   );
