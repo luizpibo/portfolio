@@ -10,6 +10,11 @@ const GlobalStyle: GlobalStyleComponent<{}, {}> = createGlobalStyle`
 
     html, body {
         font-size: 1rem;
+        background-color: #121212;
+        scroll-behavior: smooth;
+        *:target {
+            scroll-margin-top: 5rem;
+        }
     }
 
 `;

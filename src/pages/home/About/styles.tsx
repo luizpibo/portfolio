@@ -1,12 +1,15 @@
 import Styled from "styled-components";
 
 const ContainerAbout = Styled.section`
-    padding: 3rem 7rem;
+    
+    background-color: ${(props) => props.theme.neutralColors.dark200};
+    color: ${(props) => props.theme.neutralColors.light};
     display: grid;
     grid-template: 1fr / 1fr 1fr;
     justify-content: center;
-    background-color: ${(props) => props.theme.neutralColors.dark200};
-    color: ${(props) => props.theme.neutralColors.light};
+    padding: 3rem 7rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.75);
+
     @media (max-width : 768px) {
         gap: 2rem;
         padding: 3rem 1rem;
@@ -15,40 +18,38 @@ const ContainerAbout = Styled.section`
 `;
 
 const ImageContainer = Styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    img {
-        width: 50%;
-        border-left: 0.4rem solid ${(props) => props.theme.colors.blue};
-        border-radius: 0.2rem;
-        height: fit-content;
-    }
+    background-image: url('https://www.github.com/luizpibo.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-left: 0.4rem solid ${(props) => props.theme.colors.blue};
+    border-radius: 0.2rem;
+    height: 100%;
+    width: 48%;
     @media (max-width : 768px) {
-        img {
-            width: 100%;
-        }
+        width: 100%;
     }
 `;
 const TextContainer = Styled.div`
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 2rem;
+    justify-content: center;
     width: 70%;
+
     @media (max-width : 768px) {
         justify-content: flex-start;
         width: 100%;
     }
 `;
 const Buttons = Styled.div`
-    display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    display: flex;
     gap: 3rem;
-    z-index: 0;
+    justify-content: space-evenly;
+    width: 100%;
 `;
 
 export { ContainerAbout, Buttons, ImageContainer, TextContainer };

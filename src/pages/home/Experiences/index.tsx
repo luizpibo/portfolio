@@ -3,46 +3,42 @@ import { ContainerExperience, ButtonsNav, Experience } from "./style";
 const Experiences = () => {
   const dados = [
     {
-      title: "Desenvolvedor Full Stack",
-      date: "2020 - Presente",
-      company: "CASA",
+      title: "Front-end",
+      company: "HTML CSS JS",
       description:
-        " web e mobile com ReactJS, React Native, NodeJS, Express, MongoDB, TypeScript, React-Native-Web, React-Native-Paper e React-Native-Camera.",
+        "HTML5/CSS3, semântica HTML, Flexbox, CSS Grid, Arquitetura CSS, Layouts responsivos, Listas, formulários, tabelas, JavaScript para web, protocolo HTTP e otimização de SEO",
+    },
+    {
+      title: "SPA",
+      company: "React JS",
+      description:
+        "ciclo de vida de componentes, function components, hooks, context, navegação em uma SPA, testes automatizados usando Ract JS, material UI e Styled Components",
     },
     {
       title: "Desenvolvedor Full Stack",
-      date: "2020 - Presente",
-      company: "NASA",
+      company: "Next.js",
       description:
         "Desenvolvimento de aplicações web e mobile com ReactJS, React Native, NodeJS, Express, MongoDB, TypeScript, React-Native-Web, React-Native-Paper e React-Native-Camera.",
     },
     {
-      title: "Desenvolvedor Full Stack",
-      date: "2020 - Presente",
-      company: "CAMA",
+      title: "API",
+      company: "Express",
       description:
-        "Desenvolvimento de aplicações web e NodeJS, Express, MongoDB, TypeScript, React-Native-Web, React-Native-Paper e React-Native-Camera.",
-    },
-    {
-      title: "Desenvolvedor Full Stack",
-      date: "2020 - Presente",
-      company: "SALA",
-      description:
-        "Desenvolvimento de aplicações web e mobile com ReactJS, React Native, NodeJS, Express, MongoDB, TypeScript, React-Native-Web, React-Native-Paper e React-Native-Camera.",
+        "SSR (Server-side Rendering), SEO, SSG(Static Site Generation), Routing, API Routes",
     },
   ];
   const [experience, setExperience] = useState(dados[0]);
 
   return (
-    <div id="experiencias">
-      <ContainerExperience>
-        <h2 style={{ padding: "1rem 0" }}>EXPERIÊNCIAS</h2>
+    <ContainerExperience id="experiencias">
+      <div data-aos="zoom-in">
+        {/* <h2 style={{ paddingBottom: "1rem" }}>EXPERIÊNCIAS</h2> */}
         <ButtonsNav>
           <ul>
             {dados.map((dado, index) => (
               <li
                 key={index + dado.title + " nav"}
-                onClick={(e) => {
+                onMouseUp={(e) => {
                   setExperience(dado);
                 }}
               >
@@ -53,16 +49,15 @@ const Experiences = () => {
             ))}
           </ul>
         </ButtonsNav>
-
-        <Experience>
-          <div>
-            <h3>{experience.title}</h3> <span>{experience.date}</span>
-          </div>
-          <p>{experience.company}</p>
-          <p>{experience.description}</p>
-        </Experience>
-      </ContainerExperience>
-    </div>
+      </div>
+      <Experience data-aos="fade-left">
+        <div>
+          <h3>{experience.company}</h3>
+        </div>
+        <p>{experience.title}</p>
+        <p>{experience.description}</p>
+      </Experience>
+    </ContainerExperience>
   );
 };
 

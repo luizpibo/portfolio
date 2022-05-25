@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 const ContainerExperience = styled.section`
-  display: flex;
-  width: 100%;
-  padding: 3rem 7rem;
-  gap: 3rem;
   background-color: ${(props) => props.theme.neutralColors.dark};
   color: ${(props) => props.theme.neutralColors.light};
+  display: flex;
+  gap: 3rem;
+  padding: 5rem 7rem;
 
   @media (max-width: 730px) {
     flex-direction: column;
@@ -41,10 +40,6 @@ const ButtonsNav = styled.nav`
         transition: 1s;
       }
 
-      &:focus {
-        background-color: ${(props) => props.theme.neutralColors.dark200};
-        border-left: 0.2rem solid ${(props) => props.theme.colors.blue};
-      }
     }
   }
 
@@ -62,7 +57,7 @@ const Experience = styled.div`
   flex-direction: column;
   gap: 2rem;
   width: 75%;
-
+  transition: 1s;
   div {
     display: flex;
     justify-content: space-between;

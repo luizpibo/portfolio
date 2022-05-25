@@ -8,11 +8,12 @@ const HeaderContainer = styled.nav`
   align-items: center;
   backdrop-filter: blur(13.5px);
   display: flex;
-  padding: 2rem 5rem;
   justify-content: flex-end;
+  padding: 2rem 5rem;
+  position: fixed;
   width: 100%;
   -webkit-backdrop-filter: blur(13.5px);
-  z-index: 4;
+  z-index: 3;
   ul {
     display: flex;
     align-items: center;

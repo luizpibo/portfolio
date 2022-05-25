@@ -10,12 +10,14 @@ const Svg = Styled.svg`
   }
 `;
 
-const icon = () => {
+const icon:React.FC = (props) => {
   return (
     <Svg
       viewBox="0 0 842 625"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      data-aos="fade-left"
+      {...props}
     >
       <path
         opacity="0.0144928"

@@ -3,71 +3,60 @@ import GradiendButton from "../../../components/GradientButton";
 const ProjectsComponent = () => {
   const projects = [
     {
-      name: "Project 1",
+      name: "GoChamp",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Trabalho da matéria de desenvolvimento web usando express, node, sequelize e handlebars.",
       image: "https://via.placeholder.com/300x200",
       link: "#",
     },
     {
-      name: "Project 1",
+      name: "Busca clima",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "SPA feita em react que usa a api do clima para buscar o clima de uma cidade.",
       image: "https://via.placeholder.com/300x200",
       link: "#",
     },
     {
-      name: "Project 1",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      name: "Grid teamplate",
+      description: "site de noticias sobre jogos feita usando display grid.",
       image: "https://via.placeholder.com/300x200",
       link: "#",
     },
     {
-      name: "Project 1",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      image: "https://via.placeholder.com/300x200",
-      link: "#",
+      name: "UNIT UPIXELS",
+      description: "Estou trabalhando na migraçao da PWA para o novo layout. A plataforma usa postgresql, next.js, styled-components e tailwind.",
+      image: "/upixels.png",
+      link: "https://upixels.com.br/",
     },
     {
-      name: "Project 1",
+      name: "Despensa domestica",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      image: "https://via.placeholder.com/300x200",
-      link: "#",
-    },
-    {
-      name: "Project 1",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Trabalhando em finalizar um aplicativo para ajudar a gerenciar a despensa domestica.",
       image: "https://via.placeholder.com/300x200",
       link: "#",
     },
   ];
 
   return (
-    <div id="projetos">
-      <ContainerProjects>
-        <h2>Projects</h2>
-        <Projects>
-          {projects.map((project, index) => (
-            <Project>
-              <img src={project.image} />
-              <h3>{project.name}</h3>
-              <p>{project.description}</p>
-              <GradiendButton
-                color="red"
-                icon="link"
-                text="Visualizar"
-                url={project.link}
-                key={project.name + index}
-              />
-            </Project>
-          ))}
-        </Projects>
-      </ContainerProjects>
-    </div>
+    <ContainerProjects id="projetos">
+      {/* <h2>Projects</h2> */}
+      <Projects>
+        {projects.map((project, index) => (
+          <Project data-aos="zoom-in">
+            <img src={project.image} />
+            <h3>{project.name}</h3>
+            <p>{project.description}</p>
+            <GradiendButton
+              color="red"
+              icon="link"
+              text="Visualizar"
+              url={project.link}
+              key={project.name + index}
+            />
+          </Project>
+        ))}
+      </Projects>
+    </ContainerProjects>
   );
 };
 

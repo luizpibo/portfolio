@@ -13,14 +13,14 @@ const Container = styled.a`
   gap: 0.5rem;
   background-color: ${(props) => props.theme.neutralColors.dark};
   
-  &:before {
+  &:after {
     content: "";
     position: absolute;
     border-radius: 0.5rem;
-    z-index: -1;
     padding: 0.15rem;
     height: 100%;
     width: 100%;
+    z-index: -1;
     background: ${(props) =>
       props.color == "pink"
         ? props.theme.colors.gradientPink

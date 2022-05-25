@@ -2,7 +2,9 @@ import Styled from "styled-components";
 
 const Container = Styled.header`
     background: ${(props) => props.theme.neutralColors.dark};
+    overflow: hidden;
     width: 100%;
+    
     h1 {
         color: ${(props) => props.theme.colors.blue};
     }
@@ -57,12 +59,13 @@ const Container = Styled.header`
 
 const Wrapper = Styled.div`
     display: flex;
+    overflow: hidden;
     width: 100%;
     position: relative;
     padding: 5rem 0;
 
     @media (max-width: 1024px) {
-        min-height: 50vh;
+        min-height: 40vh;
     }
 `;
 
@@ -72,7 +75,6 @@ const Presentetion = Styled.div`
     flex-direction: column;
     justify-content: center;
     padding-left: 6rem;
-    z-index: 1;
     @media (max-width: 768px) {
         padding: 0;
         align-items: center;

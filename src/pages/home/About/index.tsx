@@ -12,28 +12,23 @@ const infos = {
 };
 const About = () => {
   return (
-    <div id="sobre">
-      <ContainerAbout>
-        <ImageContainer>
-          <img src="https://www.github.com/luizpibo.png" />
-        </ImageContainer>
-
-        <TextContainer>
-          <h2> Sobre mim</h2>
-          <address>{infos.localization}</address>
-          <p>{infos.texto}</p>
-          <Buttons>
-            <GradiendButton
-              color="pink"
-              icon="download"
-              text="Currículo"
-              url="#"
-            />
-            <GradiendButton color="blue" icon="email" text="E-mail" url="#" />
-          </Buttons>
-        </TextContainer>
-      </ContainerAbout>
-    </div>
+    <ContainerAbout id="sobre">
+      <ImageContainer data-aos="fade-right"/>
+      <TextContainer data-aos="fade-left">
+        <h2> Sobre mim</h2>
+        <address>{infos.localization}</address>
+        <p>{infos.texto}</p>
+        <Buttons>
+          <GradiendButton
+            color="pink"
+            icon="download"
+            text="Currículo"
+            url="#"
+          />
+          <GradiendButton color="blue" icon="email" text="E-mail" url="#" />
+        </Buttons>
+      </TextContainer>
+    </ContainerAbout>
   );
 };
 
