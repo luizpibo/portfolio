@@ -15,9 +15,13 @@ const ContainerAbout = Styled.section`
         padding: 3rem 1rem;
         grid-template: 1fr 1fr / 1fr;
     }
+    overflow-x: hidden;
 `;
 
 const ImageContainer = Styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1;
     img {
         border-left: 0.4rem solid ${(props) => props.theme.colors.blue};

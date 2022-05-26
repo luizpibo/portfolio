@@ -28,9 +28,11 @@ const HeaderContainer = styled.nav`
   }
   @media (max-width: 768px) {
     /* flex-direction: column; */
-    padding: 1rem 1.5rem;
+    li{
+      padding: 1rem 0;
+    }
+    padding: 0 1.5rem;
     ul {
-      
       overflow-x: scroll;
       /* flex-direction: column; */
     }

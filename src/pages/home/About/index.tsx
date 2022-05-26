@@ -13,7 +13,7 @@ const infos = {
 const About = () => {
   return (
     <ContainerAbout id="sobre">
-      <ImageContainer data-aos="fade-right">
+      <ImageContainer data-aos="zoom-in">
         <img src="https://github.com/luizpibo.png" alt="Foto do Luiz" />
       </ImageContainer>
       <TextContainer data-aos="fade-left">
