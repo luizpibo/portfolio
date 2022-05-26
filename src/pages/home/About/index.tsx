@@ -16,7 +16,7 @@ const About = () => {
       <ImageContainer data-aos="zoom-in">
         <img src="https://github.com/luizpibo.png" alt="Foto do Luiz" />
       </ImageContainer>
-      <TextContainer data-aos="fade-left">
+      <TextContainer data-aos="zoom-out">
         <h2> Sobre mim</h2>
         <address>{infos.localization}</address>
         <p>{infos.texto}</p>

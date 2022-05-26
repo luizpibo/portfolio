@@ -9,7 +9,7 @@ const HeaderComponent = () => {
     <Container>
       <NavBar />
       <Wrapper data-aos="fade-up">
-        <Presentetion data-aos="fade-right">
+        <Presentetion data-aos="zoom-in">
           <h3>Olá, seja bem-vindo</h3>
           <h1>
             <span>Eu sou</span> Luiz Fernando

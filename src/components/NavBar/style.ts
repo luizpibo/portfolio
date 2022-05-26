@@ -4,12 +4,12 @@ const HeaderContainer = styled.nav`
   * {
     color: ${(props) => props.theme.neutralColors.light};
   }
-
+  overflow: hidden;
   align-items: center;
   backdrop-filter: blur(13.5px);
   display: flex;
   justify-content: flex-end;
-  padding: 2rem 5rem;
+  padding: 1.5rem 5rem;
   position: fixed;
   width: 100%;
   -webkit-backdrop-filter: blur(13.5px);
@@ -31,7 +31,9 @@ const HeaderContainer = styled.nav`
     li{
       padding: 1rem 0;
     }
-    padding: 0 1.5rem;
+    padding: 0;
+    overflow: hidden;
+
     ul {
       overflow-x: scroll;
       /* flex-direction: column; */

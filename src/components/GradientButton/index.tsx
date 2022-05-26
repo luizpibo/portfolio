@@ -34,7 +34,7 @@ const GradiendButton = ({
   }
 
   return (
-    <Container href={url} color={color}>
+    <Container target="_blank" href={url} color={color}>
       {switchIcons(icon)}
       {text}
     </Container>

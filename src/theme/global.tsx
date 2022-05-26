@@ -12,6 +12,7 @@ const GlobalStyle: GlobalStyleComponent<{}, {}> = createGlobalStyle`
         font-size: 1rem;
         background-color: #121212;
         scroll-behavior: smooth;
+        overflow-x: hidden;
         *:target {
             scroll-margin-top: 5rem;
         }

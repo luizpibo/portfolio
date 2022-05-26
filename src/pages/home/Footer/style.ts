@@ -6,6 +6,10 @@ const FooterContainer = Styled.footer`
     display: flex;
     justify-content: space-between;
     color: ${props => props.theme.neutralColors.light};
+
+    @media (max-width: 730px) {
+        padding: 2rem 1rem;
+    }
 `;
 
 export { FooterContainer };

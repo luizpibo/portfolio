@@ -59,7 +59,6 @@ const Container = Styled.header`
 
 const Wrapper = Styled.div`
     display: flex;
-    overflow: hidden;
     width: 100%;
     position: relative;
     padding: 5rem 0;
