@@ -18,15 +18,12 @@ const ContainerAbout = Styled.section`
 `;
 
 const ImageContainer = Styled.div`
-    background-image: url('https://www.github.com/luizpibo.png');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-left: 0.4rem solid ${(props) => props.theme.colors.blue};
-    border-radius: 0.2rem;
-    height: 100%;
-    width: 48%;
+    flex: 1;
+    img {
+        border-left: 0.4rem solid ${(props) => props.theme.colors.blue};
+        border-radius: 0.2rem;
+        width: 70%;
+    }
     @media (max-width : 768px) {
         width: 100%;
     }

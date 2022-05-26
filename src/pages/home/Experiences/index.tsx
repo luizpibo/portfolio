@@ -42,9 +42,7 @@ const Experiences = () => {
                   setExperience(dado);
                 }}
               >
-                <div>
-                  <span>{dado.company}</span>
-                </div>
+                <span>{dado.company}</span>
               </li>
             ))}
           </ul>

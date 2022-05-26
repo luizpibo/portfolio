@@ -26,11 +26,13 @@ const HeaderContainer = styled.nav`
     font-weight: bold;
     padding: 0 2rem;
   }
-
   @media (max-width: 768px) {
-    flex-direction: column;
+    /* flex-direction: column; */
+    padding: 1rem 1.5rem;
     ul {
-      flex-direction: column;
+      
+      overflow-x: scroll;
+      /* flex-direction: column; */
     }
   }
 `;

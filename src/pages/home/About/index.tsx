@@ -13,7 +13,9 @@ const infos = {
 const About = () => {
   return (
     <ContainerAbout id="sobre">
-      <ImageContainer data-aos="fade-right"/>
+      <ImageContainer data-aos="fade-right">
+        <img src="https://github.com/luizpibo.png" alt="Foto do Luiz" />
+      </ImageContainer>
       <TextContainer data-aos="fade-left">
         <h2> Sobre mim</h2>
         <address>{infos.localization}</address>
