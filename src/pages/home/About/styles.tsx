@@ -9,6 +9,8 @@ const ContainerAbout = Styled.section`
     padding: 3rem 7rem;
     box-shadow: 0 0 1rem 0 rgba(0,0,0,0.75);
     width: 100%;
+    min-width: 290px;
+    min-height: 290px;
     @media (max-width : 768px) {
         padding: 2rem 0.5rem;
         grid-template: 1fr 1fr / 1fr;

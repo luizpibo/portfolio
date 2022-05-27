@@ -1,3 +1,4 @@
+import Image from "next/image";
 import GradiendButton from "../../../components/GradientButton";
 import {
   ContainerAbout,
@@ -14,7 +15,7 @@ const About = () => {
   return (
     <ContainerAbout id="sobre">
       <ImageContainer data-aos="zoom-in">
-        <img src="https://github.com/luizpibo.png" alt="Foto do Luiz" />
+        <img src="/luiz fernando.jpeg" alt="Foto do Luiz" />
       </ImageContainer>
       <TextContainer data-aos="zoom-out">
         <h2> Sobre mim</h2>

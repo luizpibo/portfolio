@@ -8,13 +8,13 @@ const HeaderComponent = () => {
   return (
     <Container>
       <NavBar />
-      <Wrapper data-aos="fade-up">
-        <Presentetion data-aos="zoom-in">
+      <Wrapper>
+        <Presentetion>
           <h3>Olá, seja bem-vindo</h3>
           <h1>
             <span>Eu sou</span> Luiz Fernando
           </h1>
-          <h3>DESENVOLVEDOR FRONT-END</h3>
+          <h4>DESENVOLVEDOR FRONT-END</h4>
           <Buttons>
             <GradientButton
               icon="linkedin"

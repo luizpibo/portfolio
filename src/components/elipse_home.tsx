@@ -4,7 +4,7 @@ const Svg = Styled.svg`
   flex: 1;
   width: 100%;
   
-  @media (max-width: 768px) {
+  @media (max-width: 950px) {
     position: absolute;
     bottom: 0;
   }

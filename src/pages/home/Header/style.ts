@@ -4,33 +4,29 @@ const Container = Styled.header`
     background: ${(props) => props.theme.neutralColors.dark};
     overflow: hidden;
     width: 100%;
-    
+    color: ${(props) => props.theme.neutralColors.light};
+
     h1 {
         color: ${(props) => props.theme.colors.blue};
     }
-    h2, h3 {
-        color: ${(props) => props.theme.neutralColors.light};
-    }
 
-    @media (min-width: 1079px) {
+    @media (min-width: 1920px) {
         h1 {
-            font-size: 7rem;
+            font-size: 6rem;
         }
-        h2, h3 {
-            font-size: 4rem;
+        h2, h3, h4 {
+            font-size: 3rem;
             line-height: 5rem;
-            color: ${(props) => props.theme.neutralColors.light};
         }
     }
-
+    
     @media (max-width: 1920px) {
         h1 {
-            font-size: 5rem;
+            font-size: 4rem;
         }
-        h2, h3 {
+        h2, h3, h4 {
             font-size: 2.5rem;
             line-height: 5rem;
-            color: ${(props) => props.theme.neutralColors.light};
         }
     }
 
@@ -38,21 +34,20 @@ const Container = Styled.header`
         h1 {
             font-size: 2.5rem;
         }
-        h2, h3 {
+        h2, h3, h4 {
             font-size: 1.7rem;
             line-height: 5rem;
-            color: ${(props) => props.theme.neutralColors.light};
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 950px) {
         h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
+            text-align: center;
         }
-        h2, h3 {
+        h2, h3, h4 {
             font-size: 1.2rem;
             line-height: 4rem;
-            color: ${(props) => props.theme.neutralColors.light};
         }
     }
 `;
@@ -65,7 +60,8 @@ const Wrapper = Styled.div`
     @media (min-width: 1024px){
         min-height: 20rem;
     }
-    @media (max-width: 768px) {
+
+    @media (max-width: 950px) {
         min-height: 35rem;
     }
 `;
@@ -77,7 +73,7 @@ const Presentetion = Styled.div`
     justify-content: center;
     padding-left: 6rem;
     z-index: 1;
-    @media (max-width: 768px) {
+    @media (max-width: 950px) {
         padding: 0;
         align-items: center;
     }
