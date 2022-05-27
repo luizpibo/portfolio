@@ -40,7 +40,7 @@ export default function Home() {
 
         <meta property="article:author" content="Luiz Fernando" />
 
-        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@darkMarciano" />
         <meta name="twitter:title" content="Olá" />
         <meta name="twitter:creator" content="@darkMarciano" />
