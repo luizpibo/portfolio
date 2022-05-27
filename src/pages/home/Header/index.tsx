@@ -16,7 +16,7 @@ const HeaderComponent = () => {
           </div>
           <h4>DESENVOLVEDOR FRONT-END</h4> */}
           <h2>
-            <span>Eu sou</span> Luiz Fernando
+            <span>Eu sou o</span> Luiz Fernando
           </h2>
           <Buttons>
             <GradientButton
