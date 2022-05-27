@@ -10,11 +10,14 @@ const HeaderComponent = () => {
       <NavBar />
       <Wrapper>
         <Presentetion>
-          <h3>Olá, seja bem-vindo</h3>
-          <h1>
+          <h1>Olá, seja bem-vindo</h1>
+          {/* <div>
+
+          </div>
+          <h4>DESENVOLVEDOR FRONT-END</h4> */}
+          <h2>
             <span>Eu sou</span> Luiz Fernando
-          </h1>
-          <h4>DESENVOLVEDOR FRONT-END</h4>
+          </h2>
           <Buttons>
             <GradientButton
               icon="linkedin"

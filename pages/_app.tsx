@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import GlobalStyle from "../src/theme/global";
 import "./_app.css";
-import Head from 'next/head'
+import Head from "next/head";
 import { ThemeProvider } from "styled-components";
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -22,8 +22,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Luiz Fernando</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="language" content="pt-BR" />
       </Head>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
