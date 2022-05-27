@@ -19,10 +19,15 @@ const HeaderComponent = () => {
             <GradientButton
               icon="linkedin"
               color="blue"
-              url="#"
+              url="https://www.linkedin.com/in/luiz-fernando-lima-e-silva-858192125/"
               text="Linkedin"
             />
-            <GradientButton icon="GitHub" color="pink" url="#" text="GitHub" />
+            <GradientButton
+              icon="GitHub"
+              color="pink"
+              url="https://www.github.com/luizpibo"
+              text="GitHub"
+            />
           </Buttons>
         </Presentetion>
         <Elipse />

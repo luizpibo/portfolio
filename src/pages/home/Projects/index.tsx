@@ -34,7 +34,7 @@ const ProjectsComponent = () => {
       description:
         "Trabalhando em finalizar um aplicativo para ajudar a gerenciar a despensa domestica.",
       image: "https://via.placeholder.com/300x200",
-      link: "#",
+      link: "https://github.com/luizpibo/Despensa_domestica",
     },
   ];
 
@@ -43,8 +43,11 @@ const ProjectsComponent = () => {
       {/* <h2>Projects</h2> */}
       <Projects>
         {projects.map((project, index) => (
-          <Project data-aos="zoom-in" key={"Projeto-"+project.name + index}>
-            <img src={project.image} />
+          <Project data-aos="zoom-in" key={"Projeto-" + project.name + index}>
+            <img
+              src={project.image}
+              alt={`imagem do projeto ${project.name}`}
+            />
             <h3>{project.name}</h3>
             <p>{project.description}</p>
             <GradiendButton

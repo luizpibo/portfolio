@@ -76,6 +76,7 @@ const Presentetion = Styled.div`
     flex-direction: column;
     justify-content: center;
     padding-left: 6rem;
+    z-index: 1;
     @media (max-width: 768px) {
         padding: 0;
         align-items: center;

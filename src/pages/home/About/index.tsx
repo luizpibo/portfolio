@@ -25,9 +25,9 @@ const About = () => {
             color="pink"
             icon="download"
             text="Currículo"
-            url="#"
+            url="/Luiz_Fernando_05-2022.pdf"
           />
-          <GradiendButton color="blue" icon="email" text="E-mail" url="#" />
+          {/* <GradiendButton color="blue" icon="email" text="E-mail" url="" /> */}
         </Buttons>
       </TextContainer>
     </ContainerAbout>
