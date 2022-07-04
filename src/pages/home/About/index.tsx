@@ -1,4 +1,3 @@
-import Image from "next/image";
 import GradiendButton from "../../../components/GradientButton";
 import {
   ContainerAbout,
